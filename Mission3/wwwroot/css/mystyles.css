@@ -1,0 +1,18 @@
+﻿/*
+    Jacob Donaldson's Style Sheet
+    Hilton 413
+    1/4/2021
+*/ 
+body {
+}
+
+/*updated h2 headers to be steel blue*/
+h2 {
+    color: steelblue;
+}
+
+/*makes it so images auto resize to fit the device screen better*/
+img {
+    width: 100%;
+    height: auto;
+}
