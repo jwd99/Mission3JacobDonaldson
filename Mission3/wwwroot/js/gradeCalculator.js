@@ -7,7 +7,7 @@ $("#gradeCalcSubmit").click(function () {
         (($("#group").val()/100) * 5) +
         (($("#quiz").val()/100) * 10) +
         (($("#exam").val()/100) * 20) +
-        (($("#intex").val() / 100) * 10);
+        (($("#intex").val()/100) * 10);
     //each statement will compare the value to determine what the letter grade will be.
     //gradeletter is the letter grade output
     if (totalperc >= 94) {
