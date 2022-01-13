@@ -11,23 +11,23 @@ namespace Mission3.Models
     {
         //required and keeps range within 100 for each calc field
         [Required]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         public string Assign { get; set; }
         // get set makes sure data is taken and returned
         [Required]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         public string Group { get; set; }
 
         [Required]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         public string Quiz { get; set; }
 
         [Required]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         public string Exam { get; set; }
 
         [Required]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         public string Intex { get; set; }
 
         public string Output { get; set; }
