@@ -30,5 +30,7 @@ namespace Mission3.Models
         [Range(0, 100)]
         public string Intex { get; set; }
 
+        public string Output { get; set; }
+
     }
 }

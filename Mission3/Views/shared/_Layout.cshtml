@@ -24,8 +24,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item @ViewData["Home"]"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li @ViewData["GradeCalculator"]><a class="nav-link" asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a></li>
             </ul>
         </div>
     </nav>
@@ -44,8 +44,10 @@
 
     <!--jquery and bootstrap js file links-->
     <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-    <script src="~/js/gradeCalculator.js"></script>
     <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/js/gradeCalculator.js"></script>
+
+
 </body>
 
 </html>

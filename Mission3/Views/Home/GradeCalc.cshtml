@@ -3,10 +3,14 @@
 *@
 @{
     ViewData["Title"] = "Grade Calculator";
-    ViewData["GradeCalculator"] = "class = 'nav-item active'";
+    //an attempt to add in dynamic class changing
+    //ViewData["GradeCalculator"] = "class = 'nav-item active'";
+
+
 }
 
 @model GradeCalcModel;
+
 
 <h2>Grade Calculator:</h2>
 <div class="container-sm">
@@ -15,12 +19,12 @@
     <form method="post">
         <label class="form-label">Assignments</label>
         <input id="assign" asp-for="Assign" class="form-control" type="number" step=".1" />
-        <br /> <!--@*min="0" max="100" removed to show validation is working*@-->
+        <br /> <!--min="0" max="100" removed to show validation is working-->
         <label class="form-label">Group Projects</label>
         <input id="group" asp-for="Group" class="form-control" type="number" step=".1" />
         <br />
         <label class="form-label">Quizzes</label>
-        <input id="quiz" asp-for="Quiz" class="form-control" type="number" step=".1"  />
+        <input id="quiz" asp-for="Quiz" class="form-control" type="number" step=".1" />
         <br />
         <label class="form-label">Exams</label>
         <input id="exam" asp-for="Exam" class="form-control" type="number" step=".1" />
@@ -28,15 +32,14 @@
         <label class="form-label">INTEX</label>
         <input id="intex" asp-for="Intex" class="form-control" type="number" step=".1" />
         <br />
-
-        <input id="gradeCalcSubmit" class="btn-primary" type="submit" value="Calculate" />
+        <input class="btn-primary" id="gradeCalcSubmit" type="submit" value="Calculate" />
         <br />
-        @* asp validation displays messages if conditions met *@
-        <div asp-validation-summary="All"></div>
         <label class="form-label">Calculated Grade:</label>
-        <input id="output" class="form-control" readonly />
-
+        <input class="form-control" id="output" asp-for="Output" readonly/>
+        <!--asp validation displays messages if conditions met-->
+        <div asp-validation-summary="All"></div>
     </form>
+
 
 </div>
 
