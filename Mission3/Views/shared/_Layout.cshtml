@@ -1,0 +1,58 @@
+﻿<!--
+    Jacob Donaldson Mission 3 Assignment
+    IS 413 Hilton
+    1/13/2021
+
+    Web Application with a new grade calc tab. I also fixed linking to working by adding ~/. Models have changes as well as controllers
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--adds in my icon, bootstrap files, and stylesheet-->
+    <link rel="icon" href="~/img/iconprovi1.png">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/mystyles.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+
+
+</head>
+<body>
+    <!--header nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item @ViewData["Home"]"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li @ViewData["GradeCalculator"]><a class="nav-link" asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--adds a little space between the bottom of the form and page-->
+    <br />
+    <br />
+    <br />
+
+    <footer class="card-footer">
+        Jacob Donaldson 2022 IS 413
+    </footer>
+
+    <!--jquery and bootstrap js file links-->
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/gradeCalculator.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
